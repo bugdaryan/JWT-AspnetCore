@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace JWTAuthApi.ViewModels
+namespace JWTAuth.Api.ViewModels
 {
     public class LoginViewModel
     {
