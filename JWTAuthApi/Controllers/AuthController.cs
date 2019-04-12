@@ -56,7 +56,7 @@ namespace JWTAuth.Api.Controllers
                 };
                 var signinKey = new SymmetricSecurityKey(
                     Encoding.UTF8.GetBytes(_configuration["Jwt:SigningKey"]));
-                int expireInMinutes = Convert.ToInt32(_configuration["Jwt:SigningKey"]);
+                int expireInMinutes = Convert.ToInt32(_configuration["Jwt:ExpireInMinutes"]);
 
                 var token = new JwtSecurityToken(
                     issuer: _configuration["Jwt:Site"],
